@@ -50,7 +50,7 @@ namespace DotNetCoreSqlDb.Models
         [Display(Name = "Emergency Contact Relationship")]
         public string EmergencyContactRelationship { get; set; }
         [Required]
-        [Display(Name = "Emergency Contact PhoneNumber")]
+        [Display(Name = "Emergency Contact Phone Number")]
         [DataType(DataType.PhoneNumber)]
         public long EmergencyContactPhoneNumber { get; set; }
     }
