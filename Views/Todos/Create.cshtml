@@ -3,10 +3,21 @@
 @{
     ViewData["Title"] = "Create";
 }
+<div class="row">
+    <table class="col-auto">
+        <tr>
+            <td class="col-auto small">
+                <img src="https://ds.securedsigning.com/_assets/img/public-2017/logo-180x81.png" alt="">
+            </td>
+            <td class="col-auto small align-text-top text-right">
+                Commercial in Confidence<br />
+                Unauthorised Reproduction Prohibited
+            </td>
+        </tr>
+    </table>
+</div>
 
-<h1>Create</h1>
-
-<h4>New Employee</h4>
+<h4 class="font-weight-bold"><u>NEW EMPLOYEE DETAILS</u></h4>
 <hr />
 <div class="row">
     <div class="col-auto">
@@ -82,6 +93,9 @@
                 <label asp-for="EmergencyContactPhoneNumber" class="control-label"></label>
                 <input asp-for="EmergencyContactPhoneNumber" class="form-control" />
                 <span asp-validation-for="EmergencyContactPhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <label class="font-weight-normal">Employee’s Signature:</label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

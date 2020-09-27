@@ -1,4 +1,9 @@
 ---
+setup:
+- cd to directory
+- dotnet tool install -g dotnet-ef
+- dotnet ef database update
+- dotnet run
 languages:
 - csharp
 - aspx-csharp
