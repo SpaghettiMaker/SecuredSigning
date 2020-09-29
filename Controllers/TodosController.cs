@@ -53,7 +53,7 @@ namespace DotNetCoreSqlDb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,FirstName,LastName,FullAddress,MailingAddress,AsAboveAddress,EmailAddress,PhoneNumber,CitizenStatus,EmploymentStartDate,EmploymentType,PositionTitle,EmergencyContactName,EmergencyContactRelationship,EmergencyContactPhoneNumber")] Todo todo)
+        public async Task<IActionResult> Create([Bind("ID,FirstName,LastName,FullAddress,MailingAddress,AsAboveAddress,EmailAddress,PhoneNumber,CitizenStatus,EmploymentStartDate,EmploymentType,PositionTitle,EmergencyContactName,EmergencyContactRelationship,EmergencyContactPhoneNumber,EmployeeSignature")] Todo todo)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace DotNetCoreSqlDb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,FirstName,LastName,FullAddress,MailingAddress,AsAboveAddress,EmailAddress,PhoneNumber,CitizenStatus,EmploymentStartDate,EmploymentType,PositionTitle,EmergencyContactName,EmergencyContactRelationship,EmergencyContactPhoneNumber")] Todo todo)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,FirstName,LastName,FullAddress,MailingAddress,AsAboveAddress,EmailAddress,PhoneNumber,CitizenStatus,EmploymentStartDate,EmploymentType,PositionTitle,EmergencyContactName,EmergencyContactRelationship,EmergencyContactPhoneNumber,EmployeeSignature")] Todo todo)
         {
             if (id != todo.ID)
             {

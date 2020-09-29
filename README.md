@@ -2,8 +2,10 @@
 setup:
 - cd to directory
 - dotnet tool install -g dotnet-ef
+- dotnet ef migrations add AddProperty
 - dotnet ef database update
 - dotnet run
+- navigate to http://localhost:5000/ on any browser
 languages:
 - csharp
 - aspx-csharp

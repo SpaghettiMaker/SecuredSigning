@@ -53,6 +53,8 @@ namespace DotNetCoreSqlDb.Models
         [Display(Name = "Emergency Contact Phone Number")]
         [DataType(DataType.PhoneNumber)]
         public long EmergencyContactPhoneNumber { get; set; }
+        [UIHint("SignaturePad")]
+        public byte[] EmployeeSignature { get; set; }
     }
 }
 

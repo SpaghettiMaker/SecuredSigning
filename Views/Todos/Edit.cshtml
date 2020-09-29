@@ -81,6 +81,12 @@
                 <span asp-validation-for="EmergencyContactPhoneNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="EmployeeSignature" class="control-label"></label>
+                <input asp-for="EmployeeSignature" class="form-control" type="hidden" />
+                @Html.EditorFor(model => model.EmployeeSignature)
+                <span asp-validation-for="EmployeeSignature" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
@@ -93,4 +99,6 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/Scripts/signature_pad.js"></script>
+    <script src="~/Scripts/SignaturePadInit.js"></script>
 }

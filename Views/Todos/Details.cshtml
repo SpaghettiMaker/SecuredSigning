@@ -93,9 +93,21 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.EmergencyContactPhoneNumber)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeeSignature)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmployeeSignature)
+        </dd>
     </dl>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/Scripts/signature_pad.js"></script>
+    <script src="~/Scripts/SignaturePadInit.js"></script>
+}

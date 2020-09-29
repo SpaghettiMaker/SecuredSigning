@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotNetCoreSqlDb.Migrations
 {
     [DbContext(typeof(MyDatabaseContext))]
-    [Migration("20200926040835_AddProperty")]
+    [Migration("20200929020151_AddProperty")]
     partial class AddProperty
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,6 +45,9 @@ namespace DotNetCoreSqlDb.Migrations
                     b.Property<string>("EmergencyContactRelationship")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("EmployeeSignature")
+                        .HasColumnType("BLOB");
 
                     b.Property<DateTime>("EmploymentStartDate")
                         .HasColumnType("TEXT");

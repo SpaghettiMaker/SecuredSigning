@@ -29,6 +29,7 @@ namespace DotNetCoreSqlDb.Migrations
                     EmergencyContactName = table.Column<string>(nullable: false),
                     EmergencyContactRelationship = table.Column<string>(nullable: false),
                     EmergencyContactPhoneNumber = table.Column<long>(nullable: false),
+                    EmployeeSignature = table.Column<byte[]>(nullable: true),
                 },
                 constraints: table =>
                 {

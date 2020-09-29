@@ -6,7 +6,12 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
+.signature-pad > canvas {
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 5px;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

@@ -44,6 +44,9 @@ namespace DotNetCoreSqlDb.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<byte[]>("EmployeeSignature")
+                        .HasColumnType("BLOB");
+
                     b.Property<DateTime>("EmploymentStartDate")
                         .HasColumnType("TEXT");
 
