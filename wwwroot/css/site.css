@@ -8,9 +8,10 @@ a.navbar-brand {
 }
 .signature-pad > canvas {
     display: block;
-    width: 300px;
+    width: 400px;
     height: 250px;
     margin-bottom: 5px;
+    outline: grey 3px solid;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
